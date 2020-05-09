@@ -1,6 +1,7 @@
 <template>
   <footer class="footer">
-    <img class="quote-3" src="../assets/images/quote-3-white.png" alt srcset />
+    <img v-if="darkTheme" class="quote-3" src="../assets/images/quote-3-white.png" alt="" />
+    <img v-if="!darkTheme" class="quote-3" src="../assets/images/quote-3.png" alt="" />
     <p>
       <b>Thanks for scrolling,</b> that's all folks.
     </p>
@@ -36,7 +37,11 @@
           />
         </svg>
       </a>
-      <a href="https://www.linkedin.com/in/shahid-shaikh-b9528497/" target="_blank" title="LinkedIn">
+      <a
+        href="https://www.linkedin.com/in/shahid-shaikh-b9528497/"
+        target="_blank"
+        title="LinkedIn"
+      >
         <svg viewBox="-21 -35 682.66669 682" xmlns="http://www.w3.org/2000/svg">
           <path
             d="m77.613281-.667969c-46.929687 0-77.613281 30.816407-77.613281 71.320313 0 39.609375 29.769531 71.304687 75.8125 71.304687h.890625c47.847656 0 77.625-31.695312 77.625-71.304687-.894531-40.503906-29.777344-71.320313-76.714844-71.320313zm0 0"
@@ -65,7 +70,12 @@
 
 <script>
 export default {
-    name: 'Footer'
+  name: "Footer",
+  computed: {
+    darkTheme() {
+      return this.$store.state.darkTheme;
+    }
+  }
 };
 </script>
 
