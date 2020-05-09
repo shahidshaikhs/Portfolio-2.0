@@ -241,7 +241,19 @@ export default {
             external: "https://shahidshaikhs-elemental-movies.glitch.me/",
             internal: ""
           }
-        }
+        },
+        {
+          title: "Random Color Generator",
+          description:
+            "A small and a simple app to generate random colors.",
+          technologies: ["HTML", "CSS", "JavaScript"],
+          links: {
+            github: "",
+            codepen: "https://codepen.io/shahidshaikhs/pen/dyYeNvO",
+            external: "",
+            internal: ""
+          }
+        },
       ]
     };
   }
