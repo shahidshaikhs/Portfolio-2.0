@@ -183,6 +183,18 @@ export default {
           }
         },
         {
+          title: "Twitter from  2006-07",
+          description:
+            "The old Twitter layout from 2006-07 using HTML, CSS and a bit of Javascript. The tweet section works as well.",
+          technologies: ["Vue JS"],
+          links: {
+            github: "",
+            codepen: "https://codepen.io/shahidshaikhs/pen/ZEbRwMr",
+            external: "",
+            internal: ""
+          }
+        },
+        {
           title: "Personal Website V1",
           description:
             "I had made a Dashboard sort of Portfolio in the past. However, later realized it had too much content that probably not many have the time to read and hence went ahead and made a new one. The old one is still accessible.",

@@ -34,7 +34,7 @@
           <a href="#contact">Contact</a>
         </li>
         <li class="resume-button">
-          <a target="_blank" href="/resume.pdf">Resume</a>
+          <a download target="_blank" href="/resume.pdf">Resume</a>
         </li>
       </ul>
     </nav>
@@ -53,7 +53,7 @@
         <a href="#contact" @click="navbarVisible= false">Contact</a>
       </li>
       <li>
-        <a target="_blank" href="/resume.pdf" @click="navbarVisible= false">Resume</a>
+        <a download target="_blank" href="/resume.pdf" @click="navbarVisible= false">Resume</a>
       </li>
     </ul>
   </div>
