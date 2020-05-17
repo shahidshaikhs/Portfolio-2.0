@@ -1,5 +1,5 @@
 <template>
-  <section class="container" id="skills">
+  <section class="container">
     <div class="section-3">
       <div class="introduction">
         <h4>Other Noteworthy Projects</h4>
@@ -26,7 +26,7 @@
                   v-if="project.links.external.length > 0"
                   class="project-link"
                   :href="project.links.external"
-                  target="_blank"
+                  target="_blank" rel="noopener"
                   aria-label="External Link"
                   title="External"
                 >
@@ -54,7 +54,7 @@
                 <a
                   v-if="project.links.github.length > 0"
                   :href="project.links.github"
-                  target="_blank"
+                  target="_blank" rel="noopener"
                   class="project-link"
                   aria-label="Github"
                   title="Github"
@@ -72,7 +72,7 @@
                 <a
                   v-if="project.links.codepen.length > 0"
                   :href="project.links.codepen"
-                  target="_blank"
+                  target="_blank" rel="noopener"
                   class="project-link"
                   aria-label="Codepen"
                   title="Codepen"
@@ -91,6 +91,8 @@
                   v-if="project.links.internal.length > 0"
                   :to="project.links.internal"
                   class="project-link"
+                  aria-label="Internal Link"
+                  title="Internal"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -278,12 +280,12 @@ export default {
   },
   methods: {
     showAllProjects() {
-      for (let i = 6; i < this.projects.length ; i++) {
+      for (let i = 6; i < this.projects.length; i++) {
         this.visibleList.push(this.projects[i]);
       }
     },
-    showLessProjects(){
-      this.visibleList.splice(6, this.visibleList.length)
+    showLessProjects() {
+      this.visibleList.splice(6, this.visibleList.length);
     }
   },
   created() {

@@ -29,7 +29,7 @@
                 v-if="project.links.external.length > 0"
                 class="project-link"
                 :href="project.links.external"
-                target="_blank"
+                target="_blank" rel="noopener"
                 aria-label="External Link"
                 title="External"
               >
@@ -57,7 +57,7 @@
               <a
                 v-if="project.links.github.length > 0"
                 :href="project.links.github"
-                target="_blank"
+                target="_blank" rel="noopener"
                 class="project-link"
                 aria-label="Github"
                 title="Github"
@@ -75,7 +75,7 @@
               <a
                 v-if="project.links.codepen.length > 0"
                 :href="project.links.codepen"
-                target="_blank"
+                target="_blank" rel="noopener"
                 class="project-link"
                 aria-label="Codepen"
                 title="Codepen"

@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a * {
+  cursor: none;
+}
+
 .bg-dark {
   background-color: #1e202c;
 }
@@ -76,7 +80,6 @@ nav {
 nav button {
   border: none;
   background: none;
-  cursor: pointer;
   opacity: 0.8;
   margin-left: auto;
   outline: none;
@@ -129,7 +132,6 @@ nav ul li {
   letter-spacing: 2px;
   position: relative;
   top: 5px;
-  cursor: pointer;
   fill: #c2c7e5;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
@@ -695,7 +697,6 @@ footer p {
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
-    cursor: pointer;
     text-decoration: none;
     -webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;

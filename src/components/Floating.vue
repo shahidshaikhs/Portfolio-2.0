@@ -6,7 +6,7 @@
       </div>
     </div>
 
-    <a target="_blank" href="https://www.youtube.com/user/PracProcrastination" class="floating-img">
+    <a target="_blank" rel="noopener"  href="https://www.youtube.com/user/PracProcrastination" class="floating-img">
       <img v-if="darkTheme" src="../assets/images/quote-4-white.png" alt="" srcset />
       <img v-if="!darkTheme" src="../assets/images/quote-4.png" alt="" srcset />
     </a>

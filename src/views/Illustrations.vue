@@ -1,5 +1,5 @@
 <template>
-  <section class="container" id="skills">
+  <section class="container">
     <div class="section-3">
       <div class="introduction" style="text-align: center">
         <h4 style="justify-content: center;">CSS Illustrations</h4>
@@ -10,7 +10,7 @@
 
       <div class="illustrations-container">
 
-        <a v-for="(project, index) in projects" :key="index" :href="project.link" target="_blank">
+        <a v-for="(project, index) in projects" :key="index" :href="project.link" target="_blank" rel="noopener" >
           <p>{{index + 1}}</p>
           <h2>{{project.name}}</h2>
           <svg
@@ -30,7 +30,7 @@
           For more CSS Illustrations,
           <a
             href="https://codepen.io/shahidshaikhs"
-            target="_blank"
+            target="_blank" rel="noopener"
             style="text-decoration: none"
           >click here</a>
         </p>
