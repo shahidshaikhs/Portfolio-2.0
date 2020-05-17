@@ -20,8 +20,19 @@
           tongues. However, programming is not my only field of focus, I’m
           interested in design, UX/UI, new technologies and much more.
         </p>
-        <img v-if="darkTheme" class="quote-1" src="../assets/images/quote-1-white.png" alt />
-        <img v-if="!darkTheme" class="quote-1" src="../assets/images/quote-1.png" alt />
+
+        <picture v-if="darkTheme">
+          <source srcset="../assets/images/quote-1-white.webp" type="image/webp" />
+          <source srcset="../assets/images/quote-1-white.png" type="image/jpeg" />
+          <img class="quote-1" src="../assets/images/quote-1-white.png" alt="Quotes 1" />
+        </picture>
+
+         <picture v-if="!darkTheme">
+          <source srcset="../assets/images/quote-1.webp" type="image/webp" />
+          <source srcset="../assets/images/quote-1.png" type="image/jpeg" />
+          <img class="quote-1" src="../assets/images/quote-1.png" alt="Quotes 1" />
+        </picture>
+
       </div>
     </div>
   </section>

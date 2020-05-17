@@ -6,9 +6,24 @@
       </div>
     </div>
 
-    <a target="_blank" rel="noopener"  href="https://www.youtube.com/user/PracProcrastination" class="floating-img">
-      <img v-if="darkTheme" src="../assets/images/quote-4-white.png" alt="" srcset />
-      <img v-if="!darkTheme" src="../assets/images/quote-4.png" alt="" srcset />
+    <a
+      target="_blank"
+      rel="noopener"
+      href="https://www.youtube.com/user/PracProcrastination"
+      class="floating-img"
+      aria-label="Yes Theory Youtube Channel"
+    >
+      <picture v-if="darkTheme">
+        <source srcset="../assets/images/quote-4-white.webp" type="image/webp" />
+        <source srcset="../assets/images/quote-4-white.png" type="image/jpeg" />
+        <img src="../assets/images/quote-4-white.png" alt="Quotes 4" />
+      </picture>
+
+      <picture v-if="!darkTheme">
+        <source srcset="../assets/images/quote-4-white.webp" type="image/webp" />
+        <source srcset="../assets/images/quote-4-white.png" type="image/jpeg" />
+        <img src="../assets/images/quote-4-white.png" alt="Quotes 4" />
+      </picture>
     </a>
   </div>
 </template>
@@ -16,7 +31,7 @@
 <script>
 export default {
   name: "Floating",
-   computed: {
+  computed: {
     darkTheme() {
       return this.$store.state.darkTheme;
     }

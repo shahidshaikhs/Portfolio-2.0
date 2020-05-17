@@ -19,8 +19,19 @@
           <p>MongoDB</p>
           <p>SQL</p>
         </div>
-        <img v-if="darkTheme" class="quote-2" src="../assets/images/quote-2-white.png" alt srcset />
-        <img v-if="!darkTheme" class="quote-2" src="../assets/images/quote-2.png" alt srcset />
+
+        <picture v-if="darkTheme">
+          <source srcset="../assets/images/quote-2-white.webp" type="image/webp" />
+          <source srcset="../assets/images/quote-2-white.png" type="image/jpeg" />
+          <img class="quote-2" src="../assets/images/quote-2-white.png" alt="Quotes 2" />
+        </picture>
+
+        <picture v-if="!darkTheme">
+          <source srcset="../assets/images/quote-2-white.webp" type="image/webp" />
+          <source srcset="../assets/images/quote-2-white.png" type="image/jpeg" />
+          <img class="quote-2" src="../assets/images/quote-2-white.png" alt="Quotes 2" />
+        </picture>
+
       </div>
     </div>
   </section>
