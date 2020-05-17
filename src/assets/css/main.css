@@ -8,6 +8,7 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   color: #1e202c;
+  cursor: none;
 }
 
 html {
@@ -31,6 +32,15 @@ body {
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
   line-height: 1.7;
+  cursor: none;
+}
+
+.blower {
+  font-size: 30px;
+  position: fixed;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 1000000;
 }
 
 .nav-container {
@@ -246,6 +256,9 @@ header p:nth-of-type(2) {
   transition: all 250ms ease-in-out;
   position: relative;
   z-index: 1;
+  background: none;
+  outline: none;
+  cursor: none;
 }
 
 .get-in-touch::before {
@@ -268,6 +281,11 @@ header p:nth-of-type(2) {
 
 .get-in-touch:hover::before {
   top: 0%;
+}
+
+.view-more-container {
+  margin-top: 30px;
+  text-align: center;
 }
 
 .profile-img {
@@ -545,86 +563,44 @@ footer p {
   display: none;
 }
 
-.illustrations-container {
-  margin-top: 2rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 20px;
-  margin: 0 20px;
-}
-
-.illustrations-container .small-project-card-2 {
-  margin-top: 30px;
-  border-radius: 10px;
-  padding: 40px;
+.illustrations-container a {
+  background-color: #181924;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  margin-top: 40px;
   text-decoration: none;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
   border: 2px solid transparent;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-  position: relative;
+  border-radius: 5px;
 }
 
-.illustrations-container .small-project-card-2 h3 {
-  margin-top: 2rem;
-  text-align: center;
+.illustrations-container a p {
+  font-size: 18px;
 }
 
-.illustrations-container .small-project-card-2 p {
-  text-align: center;
-  opacity: 0.5;
+.illustrations-container a h2 {
+  margin-left: 20px;
+  font-size: 18px;
 }
 
-.illustrations-container .small-project-card-2:hover {
+.illustrations-container a svg {
+  margin-left: auto;
+  height: 20px;
+  width: 20px;
+  fill: #c2c7e5;
+}
+
+.illustrations-container a:hover {
   border: 2px solid #ffaf29;
-}
-
-.illustrations-container .small-project-card-2:hover .small-img::before {
-  opacity: 0;
-}
-
-.illustrations-container .small-img {
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  background-position: center center;
-  background-size: contain;
-  z-index: 1;
-  position: relative;
-}
-
-.illustrations-container .illus-1 {
-  background-image: url(../images/illus-1.png);
-}
-
-.illustrations-container .illus-2 {
-  background-image: url(../images/illus-2.png);
-}
-
-.illustrations-container .illus-3 {
-  background-image: url(../images/illus-3.png);
-}
-
-.illustrations-container .illus-4 {
-  background-image: url(../images/illus-4.png);
-}
-
-.illustrations-container .illus-5 {
-  background-image: url(../images/illus-5.png);
-}
-
-.illustrations-container .small-img::before {
-  content: "";
-  position: absolute;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffc40067), to(#ff7402dc));
-  background-image: linear-gradient(to right bottom, #ffc40067, #ff7402dc);
-  -webkit-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
-  z-index: -1;
 }
 
 @-webkit-keyframes fade-in {

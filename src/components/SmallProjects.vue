@@ -11,7 +11,7 @@
           <div
             class="small-project-card"
             :class="darkTheme ? 'card-dark' : 'card-light'"
-            v-for="(project, index) in projects"
+            v-for="(project, index) in visibleList"
             :key="index"
           >
             <h3>{{project.title}}</h3>
@@ -128,6 +128,13 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="view-more-container" v-if="visibleList.length === 6">
+          <button @click="showAllProjects" class="get-in-touch">View More</button>
+        </div>
+        <div class="view-more-container" v-if="visibleList.length > 6">
+          <button @click="showLessProjects" class="get-in-touch">View Less</button>
         </div>
       </div>
     </div>
@@ -256,8 +263,7 @@ export default {
         },
         {
           title: "Random Color Generator",
-          description:
-            "A small and a simple app to generate random colors.",
+          description: "A small and a simple app to generate random colors.",
           technologies: ["HTML", "CSS", "JavaScript"],
           links: {
             github: "",
@@ -265,9 +271,25 @@ export default {
             external: "",
             internal: ""
           }
-        },
-      ]
+        }
+      ],
+      visibleList: []
     };
+  },
+  methods: {
+    showAllProjects() {
+      for (let i = 6; i < this.projects.length ; i++) {
+        this.visibleList.push(this.projects[i]);
+      }
+    },
+    showLessProjects(){
+      this.visibleList.splice(6, this.visibleList.length)
+    }
+  },
+  created() {
+    for (let i = 0; i < 6; i++) {
+      this.visibleList.push(this.projects[i]);
+    }
   }
 };
 </script>

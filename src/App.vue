@@ -1,5 +1,6 @@
 <template>
   <div id="app" :class="darkTheme ? 'bg-dark' : 'bg-light'">
+    <div class="blower">👈🏻</div>
     <Navbar />
     <router-view />
     <Footer />
@@ -20,14 +21,21 @@ export default {
     Footer,
     Floating
   },
-   computed: {
+  computed: {
     darkTheme() {
       return this.$store.state.darkTheme;
     }
   },
-  // created() {
-  //   document.querySelector("html").classList.add("bg-dark");
-  // }
+  methods: {
+    displayCursor(event) {
+      const blower = this.$el.querySelector(".blower");
+      blower.style.left = `${event.pageX - scrollX - 6}px`;
+      blower.style.top = `${event.pageY - scrollY - 7}px`;
+    }
+  },
+  mounted() {
+    window.addEventListener("mousemove", this.displayCursor);
+  }
 };
 </script>
 
