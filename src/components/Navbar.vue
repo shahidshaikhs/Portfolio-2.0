@@ -1,7 +1,19 @@
 <template>
   <div>
     <nav class="nav-container" :class="darkTheme ? 'bg-dark' : 'bg-light'">
-      <router-link class="logo" to="/">Shahid Shaikh</router-link>
+      <router-link class="logo" to="/">
+        <picture v-if="darkTheme">
+          <source srcset="../assets/images/logo-white.webp" type="image/webp" />
+          <source srcset="../assets/images/logo-white.png" type="image/jpeg" />
+          <img class="logo" src="../assets/images/logo-white.png" alt="Logo" />
+        </picture>
+
+        <picture v-if="!darkTheme">
+          <source srcset="../assets/images/logo-dark.webp" type="image/webp" />
+          <source srcset="../assets/images/logo-dark.png" type="image/jpeg" />
+          <img class="logo" src="../assets/images/logo-dark.png" alt="Logo" />
+        </picture>
+      </router-link>
       <button id="navbar-button" @click="toggleNavbar">
         <span></span>
         <span></span>
@@ -34,7 +46,7 @@
           <a href="#contact">Contact</a>
         </li>
         <li class="resume-button">
-          <a download target="_blank" rel="noopener"  href="/resume.pdf">Resume</a>
+          <a download target="_blank" rel="noopener" href="/resume.pdf">Resume</a>
         </li>
       </ul>
     </nav>
@@ -53,7 +65,13 @@
         <a href="#contact" @click="navbarVisible= false">Contact</a>
       </li>
       <li>
-        <a download target="_blank" rel="noopener"  href="/resume.pdf" @click="navbarVisible= false">Resume</a>
+        <a
+          download
+          target="_blank"
+          rel="noopener"
+          href="/resume.pdf"
+          @click="navbarVisible= false"
+        >Resume</a>
       </li>
     </ul>
   </div>

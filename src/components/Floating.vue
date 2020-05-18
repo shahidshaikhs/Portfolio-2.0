@@ -20,9 +20,9 @@
       </picture>
 
       <picture v-if="!darkTheme">
-        <source srcset="../assets/images/quote-4-white.webp" type="image/webp" />
-        <source srcset="../assets/images/quote-4-white.png" type="image/jpeg" />
-        <img src="../assets/images/quote-4-white.png" alt="Quotes 4" />
+        <source srcset="../assets/images/quote-4.webp" type="image/webp" />
+        <source srcset="../assets/images/quote-4.png" type="image/jpeg" />
+        <img src="../assets/images/quote-4.png" alt="Quotes 4" />
       </picture>
     </a>
   </div>

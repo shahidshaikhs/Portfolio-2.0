@@ -27,9 +27,9 @@
         </picture>
 
         <picture v-if="!darkTheme">
-          <source srcset="../assets/images/quote-2-white.webp" type="image/webp" />
-          <source srcset="../assets/images/quote-2-white.png" type="image/jpeg" />
-          <img class="quote-2" src="../assets/images/quote-2-white.png" alt="Quotes 2" />
+          <source srcset="../assets/images/quote-2.webp" type="image/webp" />
+          <source srcset="../assets/images/quote-2.png" type="image/jpeg" />
+          <img class="quote-2" src="../assets/images/quote-2.png" alt="Quotes 2" />
         </picture>
 
       </div>

@@ -7,9 +7,9 @@
     </picture>
 
      <picture v-if="!darkTheme">
-      <source srcset="../assets/images/quote-3-white.webp" type="image/webp" />
-      <source srcset="../assets/images/quote-3-white.png" type="image/jpeg" />
-      <img class="quote-3" src="../assets/images/quote-3-white.png" alt="Quotes 3" />
+      <source srcset="../assets/images/quote-3.webp" type="image/webp" />
+      <source srcset="../assets/images/quote-3.png" type="image/jpeg" />
+      <img class="quote-3" src="../assets/images/quote-3.png" alt="Quotes 3" />
     </picture>
 
     <p>

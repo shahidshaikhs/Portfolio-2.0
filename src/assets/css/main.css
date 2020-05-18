@@ -68,11 +68,8 @@ nav {
   background-color: white;
 }
 
-.logo {
-  font-size: 24px;
-  letter-spacing: 2px;
-  font-family: 'Nanum Pen Script', cursive;
-  text-decoration: none;
+.logo img {
+  height: 20px;
 }
 
 nav button {
@@ -329,9 +326,7 @@ header p:nth-of-type(2) {
 }
 
 .introduction p span {
-  font-size: 22px;
   color: #ffaf29;
-  font-family: "Nanum Pen Script", cursive;
 }
 
 .quote-1 {
