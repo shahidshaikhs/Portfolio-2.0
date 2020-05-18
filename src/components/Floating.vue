@@ -2,7 +2,7 @@
   <div>
     <div class="floating-email">
       <div class="floating-email-inner">
-        <a href="mailto:shahid.sk27595@gmail.com">shahid.sk27595@gmail.com</a>
+        <a href="mailto:shahid.sk27595@gmail.com" aria-label="Email">shahid.sk27595@gmail.com</a>
       </div>
     </div>
 

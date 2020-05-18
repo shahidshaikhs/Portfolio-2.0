@@ -2,7 +2,7 @@
   <section class="container" id="about">
     <div class="grid-two">
       <div>
-        <a href="https://github.com/shahidshaikhs">
+        <a href="https://github.com/shahidshaikhs" rel="noopener" aria-label="Github" title="Logo">
           <div class="profile-img"></div>
         </a>
       </div>

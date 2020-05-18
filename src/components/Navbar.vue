@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="nav-container" :class="darkTheme ? 'bg-dark' : 'bg-light'">
-      <router-link class="logo" to="/">
+      <router-link class="logo" to="/" aria-label="Logo">
         <picture v-if="darkTheme">
           <source srcset="../assets/images/logo-white.webp" type="image/webp" />
           <source srcset="../assets/images/logo-white.png" type="image/jpeg" />
