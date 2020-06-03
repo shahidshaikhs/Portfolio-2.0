@@ -155,6 +155,18 @@ export default {
     return {
       projects: [
         {
+          title: "Terribly Short Life!",
+          description:
+            "A website where you enter your birthdate and it will guess how much time do you have left. This is more of website for you to realize that life is too short and to make sure you making good use of it.",
+          technologies: ["Vue JS", "CSS3", "JSON"],
+          links: {
+            github: "",
+            codepen: "",
+            external: "http://terriblyshortlife.shahidshaikh.com/",
+            internal: ""
+          }
+        },
+        {
           title: "Quotify",
           description:
             "Quotify is a small website for users to find quotes from well known individuals around the world. It is an open source project so feel free to contribute.",
