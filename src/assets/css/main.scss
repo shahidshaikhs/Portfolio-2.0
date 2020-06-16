@@ -52,6 +52,7 @@ body {
   position: fixed;
   transform: rotate(45deg);
   z-index: 1000000;
+  display: none;
 }
 
 .nav-container {
@@ -580,6 +581,9 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+  .blower{
+    display: block;
+  }
   nav button,
   .responsive-nav {
     display: none;
