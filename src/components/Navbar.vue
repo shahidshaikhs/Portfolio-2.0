@@ -14,7 +14,7 @@
           <img class="logo" src="../assets/images/logo-dark.png" alt="Logo" />
         </picture>
       </router-link>
-      <button id="navbar-button" @click="toggleNavbar">
+      <button aria-label="Toggle Navbar" id="navbar-button" @click="toggleNavbar">
         <span></span>
         <span></span>
         <span></span>
