@@ -23,7 +23,7 @@ html {
   scroll-behavior: smooth;
 }
 
-a *{
+a * {
   cursor: none;
 }
 
@@ -78,7 +78,7 @@ nav {
   background-color: white;
 }
 
-.logo img{
+.logo img {
   height: 20px;
 }
 
@@ -227,7 +227,7 @@ header h2 {
   font-size: 3rem;
   line-height: 1;
   opacity: 0.5;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
 }
 
 header p:nth-of-type(2) {
@@ -581,7 +581,7 @@ footer p {
 }
 
 @media (min-width: 1024px) {
-  .blower{
+  .blower {
     display: block;
   }
   nav button,
@@ -720,6 +720,7 @@ footer p {
 
   header h2 {
     font-size: 5rem;
+    letter-spacing: -5px;
   }
 
   .quote-1 {

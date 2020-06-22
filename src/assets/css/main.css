@@ -233,7 +233,7 @@ header h2 {
   font-size: 3rem;
   line-height: 1;
   opacity: 0.5;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
 }
 
 header p:nth-of-type(2) {
@@ -768,6 +768,7 @@ footer p {
   }
   header h2 {
     font-size: 5rem;
+    letter-spacing: -5px;
   }
   .quote-1 {
     margin-top: 40px;
