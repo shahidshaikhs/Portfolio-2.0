@@ -17,6 +17,14 @@ You can give credit by linking back to "shahidshaikh.com".
 ### Do you have any questions?
 Please reach out to me via my email "shahid.sk27595@gmail.com"
 
+### Contribute to this Repo
+- Fork this repository.
+- Clone the your new repository to your system.
+- Create a new branch
+- Add your changes.
+- Commit changes and push the new branch.
+- Open and submit a PR.
+
 ## Project setup
 ```
 npm install
