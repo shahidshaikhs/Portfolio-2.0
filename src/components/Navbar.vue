@@ -46,7 +46,7 @@
           <a href="#contact">Contact</a>
         </li>
         <li class="resume-button">
-          <a download target="_blank" rel="noopener" href="/resume.pdf">Resume</a>
+          <a download target="_blank" rel="noopener" title="Shahid Shaikh - Resume" href="/Shahid_Shaikh_Resume.pdf">Resume</a>
         </li>
       </ul>
     </nav>
@@ -69,7 +69,8 @@
           download
           target="_blank"
           rel="noopener"
-          href="/resume.pdf"
+          href="/Shahid_Shaikh_Resume.pdf"
+          title="Shahid Shaikh - Resume"
           @click="navbarVisible= false"
         >Resume</a>
       </li>

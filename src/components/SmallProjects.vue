@@ -26,7 +26,8 @@
                   v-if="project.links.external.length > 0"
                   class="project-link"
                   :href="project.links.external"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   aria-label="External Link"
                   title="External"
                 >
@@ -54,7 +55,8 @@
                 <a
                   v-if="project.links.github.length > 0"
                   :href="project.links.github"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="project-link"
                   aria-label="Github"
                   title="Github"
@@ -72,7 +74,8 @@
                 <a
                   v-if="project.links.codepen.length > 0"
                   :href="project.links.codepen"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="project-link"
                   aria-label="Codepen"
                   title="Codepen"
@@ -149,11 +152,23 @@ export default {
   computed: {
     darkTheme() {
       return this.$store.state.darkTheme;
-    }
+    },
   },
   data() {
     return {
       projects: [
+        {
+          title: "Portfolio Website",
+          description:
+            "I made this Portfolio because the previous one had too much of text. This website is open source and made using Vue, Vuex and VueRouter",
+          technologies: ["VueJS", "SASS", "CSS"],
+          links: {
+            github: "https://github.com/shahidshaikhs/Portfolio-2.0",
+            codepen: "",
+            external: "https://shahidshaikh.com",
+            internal: "",
+          },
+        },
         {
           title: "Terribly Short Life!",
           description:
@@ -163,8 +178,8 @@ export default {
             github: "",
             codepen: "",
             external: "http://terriblyshortlife.shahidshaikh.com/",
-            internal: ""
-          }
+            internal: "",
+          },
         },
         {
           title: "Quotify",
@@ -175,8 +190,8 @@ export default {
             github: "https://github.com/shahidshaikhs/Quotify",
             codepen: "",
             external: "https://quotifyy.netlify.app/",
-            internal: ""
-          }
+            internal: "",
+          },
         },
         {
           title: "Meteor Todo",
@@ -187,8 +202,20 @@ export default {
             github: "https://github.com/shahidshaikhs/Meteor-Todo-",
             codepen: "",
             external: "https://meteor-todo.netlify.app/",
-            internal: ""
-          }
+            internal: "",
+          },
+        },
+        {
+          title: "CSS Illustrations",
+          description:
+            "A project that I started recently, which contains a list of illustrations that I have made using Pure CSS on Codepen.",
+          technologies: ["SASS", "CSS"],
+          links: {
+            github: "",
+            codepen: "",
+            external: "",
+            internal: "/css-illustrations",
+          },
         },
         {
           title: "Pineapple Icon Pack",
@@ -200,8 +227,8 @@ export default {
             codepen: "",
             external:
               "https://play.google.com/store/apps/details?id=com.shahid.pineapple&hl=en_IN",
-            internal: ""
-          }
+            internal: "",
+          },
         },
         {
           title: "Twitter from  2006-07",
@@ -212,8 +239,8 @@ export default {
             github: "",
             codepen: "https://codepen.io/shahidshaikhs/pen/ZEbRwMr",
             external: "",
-            internal: ""
-          }
+            internal: "",
+          },
         },
         {
           title: "Personal Website V1",
@@ -224,21 +251,10 @@ export default {
             github: "https://github.com/shahidshaikhs/Portfolio-Vue-",
             codepen: "",
             external: "https://shahid-old.netlify.app",
-            internal: ""
-          }
+            internal: "",
+          },
         },
-        {
-          title: "CSS Illustrations",
-          description:
-            "A project that I started recently, which contains a list of illustrations that I have made using Pure CSS on Codepen.",
-          technologies: ["SASS", "CSS"],
-          links: {
-            github: "",
-            codepen: "",
-            external: "",
-            internal: "/css-illustrations"
-          }
-        },
+
         {
           title: "LogicBoxes Helpdesk",
           description:
@@ -248,8 +264,8 @@ export default {
             github: "",
             codepen: "",
             external: "https://support.logicboxes.com/helpdesk/",
-            internal: ""
-          }
+            internal: "",
+          },
         },
         {
           title: "Flipping Cards",
@@ -260,8 +276,8 @@ export default {
             github: "",
             codepen: "https://codepen.io/shahidshaikhs/pen/mZMrGW",
             external: "",
-            internal: ""
-          }
+            internal: "",
+          },
         },
         {
           title: "Elemental Movies",
@@ -272,8 +288,8 @@ export default {
             github: "https://github.com/shahidshaikhs/Elemental-Movies",
             codepen: "",
             external: "https://shahidshaikhs-elemental-movies.glitch.me/",
-            internal: ""
-          }
+            internal: "",
+          },
         },
         {
           title: "Random Color Generator",
@@ -283,11 +299,11 @@ export default {
             github: "",
             codepen: "https://codepen.io/shahidshaikhs/pen/dyYeNvO",
             external: "",
-            internal: ""
-          }
-        }
+            internal: "",
+          },
+        },
       ],
-      visibleList: []
+      visibleList: [],
     };
   },
   methods: {
@@ -298,13 +314,13 @@ export default {
     },
     showLessProjects() {
       this.visibleList.splice(6, this.visibleList.length);
-    }
+    },
   },
   created() {
     for (let i = 0; i < 6; i++) {
       this.visibleList.push(this.projects[i]);
     }
-  }
+  },
 };
 </script>
 
